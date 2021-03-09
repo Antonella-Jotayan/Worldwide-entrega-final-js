@@ -1,0 +1,703 @@
+body {
+  font-family: "Oxygen", sans-serif;
+  color: black;
+}
+/* Formulario check/exclamation icons */
+.formControl input:focus {
+  outline: 0;
+}
+.formControl.success input {
+  border-color: #2ecc71;
+}
+.formControl.error input {
+  border-color: #e74c3c;
+}
+.formControl i {
+  visibility: hidden;
+}
+.formControl.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.formControl.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.formControl small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.formControl.error small {
+  visibility: visible;
+}
+
+.requiredAsterisk {
+  color: red;
+}
+
+/* Fin formulario check/exclamation icons */
+/* Background buttons */
+.colorDark {
+  background-color: rgb(0, 0, 0);
+  border-color: black;
+}
+.btn-primary:hover {
+  background-color: rgb(102, 101, 101);
+  border-color: rgb(102, 101, 101);
+}
+/* Background img Home */
+.containerBackground {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.007)),
+    url(../img/bannerPrincipal1920x900.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.text {
+  margin-top: 40%;
+}
+.text h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.137);
+  border: 0.2rem solid rgba(255, 255, 255, 0.87);
+  padding: 1.5rem;
+}
+
+/* Header */
+.navbar-brand {
+  font-size: 0rem;
+}
+
+nav a {
+  font-size: 1.2rem;
+}
+.logo {
+  width: 90%;
+}
+/* Footer */
+
+.logoFooter {
+  margin-bottom: 2rem;
+  width: 200px;
+  height: 30px;
+}
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: #f8f9fa;
+}
+.footerPromotions {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+.footerTextStyle {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.footerSubmit {
+  font-size: 0.8rem;
+}
+.inputFooter {
+  font-size: 0.8rem;
+}
+.mediosDePago {
+  max-width: 55%;
+  max-height: 55%;
+}
+
+.icons {
+  padding-top: 6%;
+}
+.icons i {
+  font-size: 1.6rem;
+  padding: 0 0.3rem;
+}
+
+.fa-instagram {
+  color: rgb(0, 0, 0);
+}
+
+.fa-instagram:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+
+  color: rgb(221, 42, 123);
+}
+.fa-youtube {
+  color: rgb(0, 0, 0);
+}
+
+.fa-youtube:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  color: rgb(255, 0, 0);
+}
+.fa-tripadvisor {
+  color: rgb(0, 0, 0);
+}
+.fa-tripadvisor:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  color: rgb(66, 216, 161);
+}
+/* SECCIÓN "HOME" */
+
+/* Cards */
+.featured {
+  margin: 4rem 0 0 0;
+}
+
+.featuredTitle {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 3rem 0 2rem 0;
+}
+.featuredCard {
+  margin-bottom: 2rem;
+}
+
+.featuredCard:hover {
+  box-shadow: 0px 0px 20px 3px rgb(218, 216, 216);
+}
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.cardPrice {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(42, 39, 230);
+}
+
+.cardText {
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Animations */
+
+.featuredTitleAnimation {
+  opacity: 0;
+  animation: featuredTitleAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes featuredTitleAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.textAnimation {
+  opacity: 0;
+  animation: textAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation,
+.animation2,
+.animation3,
+.animation4,
+.animation5,
+.animation6,
+.animation7,
+.animation8 {
+  opacity: 0;
+  animation: animation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+.animation2 {
+  animation-delay: 0.3s;
+}
+.animation3 {
+  animation-delay: 0.6s;
+}
+.animation4 {
+  animation-delay: 0.9s;
+}
+.animation5 {
+  animation-delay: 1.2s;
+}
+.animation6 {
+  animation-delay: 1.5s;
+}
+.animation7 {
+  animation-delay: 1.8s;
+}
+.animation8 {
+  animation-delay: 2.1s;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sección "Nosotros" */
+.nosotros {
+  margin-bottom: 2rem;
+}
+.fa-check {
+  font-size: 3rem;
+}
+.fa-clock {
+  font-size: 3rem;
+}
+.fa-shield-alt {
+  font-size: 3rem;
+}
+
+.nosotrosSubtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+.nosotrosParagraph {
+  font-size: 0.9rem;
+}
+.boxCaracteristicas {
+  margin-bottom: 1.8rem;
+}
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/banner-3-banner1920x600.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+}
+
+.background:hover {
+  transition: all 1s ease-in-out;
+  background-color: rgb(184, 183, 183);
+}
+
+/* cards */
+#cards .card {
+  border-radius: 20px;
+  min-height: 100%;
+}
+
+#cards .heading-border {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+}
+
+#cards .card .user-picture img {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  background: #f8f9fa !important;
+  padding: 10px;
+}
+
+#cards .card .user-content .user-name {
+  margin-right: 150px;
+}
+
+/* Sección "Armá tu viaje" */
+.presupuestoText {
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.armaTuViaje {
+  margin: 4rem 0 0 0;
+}
+.backgroundSplit {
+  background-color: #f3f3f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1rem;
+}
+.borderForm {
+  padding: 1rem;
+  border: 0.2px solid rgb(170, 170, 170);
+}
+/* SECCIÓN CONTACTO */
+.contact {
+  margin: 4rem 0 0 0;
+}
+
+.contactMap {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+}
+.contactInfo {
+  padding: 0;
+}
+.contactoInfo {
+  margin-bottom: 3rem;
+}
+.contactInfoTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.contactInfoContent {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+.contact .fa-clock {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+.contact .fa-phone {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.contact .fa-envelope {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+.contact .fa-map-marker-alt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.modalTitle {
+  color: rgb(42, 39, 230);
+  font-weight: 600;
+}
+
+.btnColor {
+  background-color: #ffffff;
+  color: black;
+  border-color: rgb(170, 170, 170);
+}
+
+/* Caroussel */
+.opiniones {
+  display: none;
+}
+.img-text {
+  width: 100%;
+  height: 200px;
+  display: block;
+  text-align: center;
+  padding: 10% 5%;
+  background: linear-gradient(rgb(65, 43, 230), rgb(42, 43, 230));
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.img-text h2 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.img-text p {
+  font-size: 0.8rem;
+}
+
+.single-box {
+  position: relative;
+}
+.carousel-indicators {
+  display: none;
+}
+.fa-star {
+  color: yellow;
+  margin: 2rem 0 1rem 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+  .featuredTitle {
+    font-size: 1.6rem;
+  }
+  .cardTitle {
+    font-size: 1.4rem;
+  }
+  .cardPrice {
+    font-size: 1.3rem;
+  }
+  .cardText {
+    font-size: 1.3rem;
+  }
+  .footerPromotions {
+    font-size: 1.4rem;
+  }
+  .footerTextStyle {
+    font-size: 1rem;
+  }
+  .mediosDePago {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  .footerTextStyle {
+    font-size: 1.1rem;
+    margin-top: 0;
+  }
+  .icons i {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    width: 80%;
+  }
+  .contactInfoTitle {
+    font-size: 1.3rem;
+  }
+
+  .contactInfoContent {
+    font-size: 1.1rem;
+  }
+  .logo {
+    width: 55%;
+  }
+}
+
+@media (min-width: 768px) {
+  .text h1 {
+    font-size: 2.3rem;
+    padding: 2rem;
+  }
+  .featuredTitle {
+    font-size: 1.7rem;
+    margin: 3.5rem 0 3rem 0;
+  }
+  .cardTitle {
+    font-size: 1.6rem;
+  }
+  .cardPrice {
+    font-size: 1.4rem;
+  }
+  .cardText {
+    font-size: 1.2rem;
+  }
+
+  .featured {
+    padding: 0 5rem;
+  }
+
+  .contact {
+    padding: 0 5rem;
+  }
+  .contactInfo {
+    margin-top: 0;
+  }
+  .contactInfo {
+    border: 0.02rem solid rgb(212, 212, 212);
+    padding: 0;
+  }
+  .contactoInfo {
+    margin-bottom: 3rem;
+  }
+
+  .contactMap {
+    height: 550px;
+  }
+
+  .nosotros {
+    margin: 4rem 0 2.5rem 0;
+    padding: 0 5rem;
+  }
+  .nosotrosSubtitle {
+    font-size: 1rem;
+  }
+  .nosotrosParagraph {
+    font-size: 0.9rem;
+  }
+
+  .fa-check {
+    font-size: 4rem;
+  }
+  .fa-clock {
+    font-size: 4rem;
+  }
+  .fa-shield-alt {
+    font-size: 4rem;
+  }
+  .boxCaracteristicas {
+    margin-bottom: 0;
+  }
+  .opiniones {
+    display: block;
+  }
+  .icons i {
+    font-size: 1.9rem;
+  }
+  .logo {
+    width: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    width: 50%;
+  }
+  .text {
+    margin-top: 45%;
+  }
+  .text h1 {
+    font-size: 3rem;
+  }
+  .footerSubmit {
+    font-size: 1rem;
+  }
+  .icons i {
+    font-size: 2rem;
+  }
+  .inputFooter {
+    font-size: 1rem;
+  }
+  .mediosDePago {
+    max-width: 55%;
+    max-height: 55%;
+  }
+  .armaTuViaje {
+    padding: 0 10rem;
+  }
+  .presupuestoText {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footerTextStyle {
+    font-size: 1.2rem;
+  }
+  .footer {
+    margin-top: 6rem;
+  }
+  .icons i {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+  .mediosDePago {
+    max-width: 45%;
+    max-height: 45%;
+  }
+
+  .featured {
+    padding: 0 8rem;
+  }
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+  .cardPrice {
+    font-size: 1.4rem;
+  }
+  .text {
+    margin-top: 30%;
+  }
+  .text h1 {
+    font-size: 3.7rem;
+    padding: 2rem;
+  }
+
+  .contact {
+    padding: 0 18rem;
+  }
+
+  .nosotros {
+    padding: 0 15rem;
+  }
+  .fa-check {
+    font-size: 4.5rem;
+  }
+  .fa-clock {
+    font-size: 4.5rem;
+  }
+  .fa-shield-alt {
+    font-size: 4.5rem;
+  }
+
+  .nosotros img:hover {
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.2);
+  }
+
+  .nosotrosSubtitle {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+  }
+  .nosotrosParagraph {
+    font-size: 1rem;
+  }
+  .img-text h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  .img-text p {
+    font-size: 0.9rem;
+  }
+  .armaTuViaje {
+    padding: 0 15rem;
+  }
+  .logo {
+    width: 40%;
+  }
+}
