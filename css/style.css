@@ -2,6 +2,19 @@ body {
   font-family: "Oxygen", sans-serif;
   color: black;
 }
+
+/* Preloader */
+.preloader {
+  background: url(../img/preloader.gif) no-repeat center rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/* Fin preloader */
+
 /* Formulario check/exclamation icons */
 .formControl input:focus {
   outline: 0;
