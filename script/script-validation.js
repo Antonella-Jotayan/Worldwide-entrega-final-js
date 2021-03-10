@@ -1,6 +1,6 @@
 // // Validacion: Solo letras para input name e input surname.
-document.getElementById("name").addEventListener("keyup", onlyLetters);
-document.getElementById("surname").addEventListener("keyup", onlyLetters);
+$("#name").on("keyup", onlyLetters);
+$("#surname").on("keyup", onlyLetters);
 
 function onlyLetters() {
   let re = /[^a-z]/gi;
@@ -8,7 +8,6 @@ function onlyLetters() {
 }
 
 // Validación nombre, apellido, mail, mensaje.
-
 const form = document.getElementById("form");
 const nombre = document.getElementById("name");
 const apellido = document.getElementById("surname");
@@ -84,7 +83,6 @@ function isEmail(email) {
 }
 
 // Funciones para íconos de success o error y mensaje de error.
-
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");

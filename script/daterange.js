@@ -1,4 +1,4 @@
-$(function () {
+function datarange() {
   $('input[name="daterange"]').daterangepicker(
     {
       opens: "center",
@@ -30,4 +30,6 @@ $(function () {
       );
     }
   );
-});
+}
+
+datarange();

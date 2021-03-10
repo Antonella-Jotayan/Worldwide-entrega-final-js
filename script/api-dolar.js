@@ -1,7 +1,7 @@
-document.querySelector("#dolar").addEventListener("click", function () {
+$("#dolar").on("click", function () {
   obtenerDatos("dolar");
 });
-document.querySelector("#euro").addEventListener("click", function () {
+$("#euro").on("click", function () {
   obtenerDatos("euro");
 });
 

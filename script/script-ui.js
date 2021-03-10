@@ -10,7 +10,6 @@ let climaR;
 let lugarR;
 
 // Selects validation
-
 function selectValues() {
   let selectArray = [];
 
@@ -63,10 +62,7 @@ function checkboxValues() {
   return interesesArray;
 }
 
-// Llamado al botón enviar, funcion para guardar lo que el cliente cargó, ejecucion de función para agregar datos del cliente al sistema.
-
-// document.getElementById("saveClientBtn").addEventListener("click", saveClient);
-
+// Función para guardar lo que el cliente cargó, ejecucion de función para agregar datos del cliente al sistema.
 function saveClient() {
   let presupuesto = document.getElementById("selectBudget").value,
     plan = document.getElementById("selectPlan").value,

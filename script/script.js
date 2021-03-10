@@ -1,5 +1,4 @@
 // Array vacío para hacerle push, declaracion de funcion para agregar el cliente al sistema, objeto cliente, push.
-
 let clientList = [];
 
 function addClientToSystem(
