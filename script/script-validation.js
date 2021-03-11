@@ -18,12 +18,14 @@ let validationFields = [];
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const datePickerValidation = dateRangeValidation();
   const selectValidation = selectValues();
   const radioValidation = radioValues();
   const checkboxValidation = checkboxValues();
   const inputsValidation = checkInputs();
 
   if (
+    datePickerValidation &&
     selectValidation.length == 2 &&
     inputsValidation.length >= 3 &&
     radioValidation.length == 3 &&
@@ -31,6 +33,8 @@ form.addEventListener("submit", (e) => {
   ) {
     saveClient();
     modal();
+  } else {
+    generalError();
   }
 });
 
@@ -93,4 +97,9 @@ function setErrorFor(input, message) {
 function setSuccessFor(input) {
   const formControl = input.parentElement;
   formControl.className = "formControl success";
+}
+
+function generalError() {
+  let paragraph = document.getElementById("generalErrorMessage");
+  paragraph.className = "visible";
 }

@@ -2,6 +2,7 @@ function datarange() {
   $('input[name="daterange"]').daterangepicker(
     {
       opens: "center",
+      minDate: moment().toDate(),
     },
 
     function (start, end, label) {
@@ -31,5 +32,18 @@ function datarange() {
     }
   );
 }
-
 datarange();
+
+const dateRangeValidation = () => {
+  const datePickerValue = document.getElementById("date").value;
+  const today = `${moment().format("L")} - ${moment().format("L")}`;
+
+  const startDate = datePickerValue.slice(0, 10);
+  const endDateDate = datePickerValue.slice(13, 23);
+
+  if (datePickerValue == today || startDate == endDateDate) {
+    return false;
+  } else {
+    return true;
+  }
+};

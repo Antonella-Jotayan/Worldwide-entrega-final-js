@@ -3,6 +3,7 @@ let clientList = [];
 
 function addClientToSystem(
   presupuesto,
+  fecha,
   plan,
   viaje,
   clima,
@@ -15,6 +16,7 @@ function addClientToSystem(
 ) {
   let newClient = {
     presupuesto: presupuesto,
+    fecha: fecha,
     plan: plan,
     viaje: viaje,
     clima: clima,
@@ -25,7 +27,6 @@ function addClientToSystem(
     mail: mail,
     mensaje: mensaje,
   };
-  console.log(newClient);
   clientList.push(newClient);
   jsonStoreClient(clientList);
 }
@@ -38,5 +39,3 @@ function jsonStoreClient(list) {
 // Traer desde local storage
 let storedListJSON = localStorage.getItem("localClient");
 let storedListObj = JSON.parse(storedListJSON);
-
-// console.log(storedListObj);

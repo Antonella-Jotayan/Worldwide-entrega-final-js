@@ -65,6 +65,7 @@ function checkboxValues() {
 // Función para guardar lo que el cliente cargó, ejecucion de función para agregar datos del cliente al sistema.
 function saveClient() {
   let presupuesto = document.getElementById("selectBudget").value,
+    fecha = document.getElementById("date").value,
     plan = document.getElementById("selectPlan").value,
     viaje = viajeEnR,
     clima = climaR,
@@ -77,6 +78,7 @@ function saveClient() {
 
   addClientToSystem(
     presupuesto,
+    fecha,
     plan,
     viaje,
     clima,
